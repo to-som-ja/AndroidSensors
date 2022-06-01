@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab5</string>
+    <string name="acc_X">0</string>
+    <string name="acc_Y">0</string>
+    <string name="acc_Z">0</string>
+    <string name="light">0</string>
+</resources>
