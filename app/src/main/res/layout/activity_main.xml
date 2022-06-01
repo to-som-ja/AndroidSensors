@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="sensorViewModel"
+            type="edu.zut.erasmus_plus.sensors.viewmodel.SensorViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -74,7 +76,7 @@
                     android:layout_column="2"
                     android:background="@color/primaryDarkColor"
                     android:gravity="center"
-                    android:text="@string/acc_X"
+                    android:text="@{String.valueOf(sensorViewModel.sensor.accX)}"
                     android:textColor="@color/primaryTextColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -102,7 +104,7 @@
                     android:layout_column="2"
                     android:background="@color/primaryDarkColor"
                     android:gravity="center"
-                    android:text="@string/acc_Y"
+                    android:text="@{String.valueOf(sensorViewModel.sensor.accY)}"
                     android:textColor="@color/primaryTextColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -130,7 +132,7 @@
                     android:layout_column="2"
                     android:background="@color/primaryDarkColor"
                     android:gravity="center"
-                    android:text="@string/acc_Z"
+                    android:text="@{String.valueOf(sensorViewModel.sensor.accZ)}"
                     android:textColor="@color/primaryTextColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -158,7 +160,7 @@
                     android:layout_column="2"
                     android:background="@color/primaryDarkColor"
                     android:gravity="center"
-                    android:text="@string/light"
+                    android:text="@{String.valueOf(sensorViewModel.sensor.light)}"
                     android:textColor="@color/primaryTextColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
